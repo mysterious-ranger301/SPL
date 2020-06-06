@@ -3,10 +3,11 @@ why I made this and what it does. I'll tell you now:
 So first of all, unpack the .zip file and you'll see the .py file and
 this README.txt file. You can use this module in any of your Python
 programs (I assume your version if Py3 and you have Windows, but I think it should work
-with Py2 or Linux). What this module does, is it lets your program open
+with Py2). What this module does, is it lets your program open
 files with their appropriate apps. For example, you say spl.Open('Test.txt'),
-Python will open that file in, say, notepad. For macOSX users, I'll make
-a version just for you.
+Python will open that file in, say, notepad. For macOSX users, I have a version for macOS, but
+most of the features rely on command line, so you'll have to download and edit for youself.
+And as for Linux, sadly I couldn't get the linux version working, so you'll have to replicate it yourself :(
 Another feature is you can use the command line with this module.
 Say you type:
 spl.cmd('pip3 install numpy')
