@@ -5,8 +5,8 @@ this README.txt file. You can use this module in any of your Python
 programs (I assume your version if Py3 and you have Windows, but I think it should work
 with Py2 or Linux). What this module does, is it lets your program open
 files with their appropriate apps. For example, you say spl.Open('Test.txt'),
-Python will open that file in, say, notepad. Just a warning, this might
-not work for macOSX, you'll have to edit that a little (sorry for that).
+Python will open that file in, say, notepad. For macOSX users, I'll make
+a version just for you.
 Another feature is you can use the command line with this module.
 Say you type:
 spl.cmd('pip3 install numpy')
