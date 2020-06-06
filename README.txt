@@ -29,7 +29,7 @@ saying .Open('Test.txt', 'C:\\Windows\\System32\\notepad.exe'))
 .openApp(app_path) # opens app (enter app path to do it)
 And that's all! There's even an error class - SplError! You can raise it if you want:
 raise SPL.SplError('An exception Occured')
-
+I will also constantly release newer version of this module.
 Sorry for the very long explanation,
 Mysterious Ranger
 Enjoy!
