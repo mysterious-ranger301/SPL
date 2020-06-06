@@ -31,7 +31,7 @@ class cmd:
         self._cd(path)
         if not self.checkpath(file):
             raise self.SplError(self.err_file_path)
-        self.cmd('/{0}'.format(file))
+        self.cmd('./{0}'.format(file))
     def checkpath(self, path):
         if os.path.exists(path):
             return True
