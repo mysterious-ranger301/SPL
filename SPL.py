@@ -13,7 +13,7 @@ class cmd:
 #        self.__author__ = spl.__author__
         self.__instructions__ = '''Unlike SPL, the cmd() class uses the command line to do things. SPL's Open() function isn't reliable for opening files with extensions like .mp4, .mp3, or .wav. Use the _cmdOpenFile(file, path) instead. Syntax of _cmdOpenFile(file, path): where 'file' is the name of the file you want to open (with the extension). You don't need to specify 'path', its default value is '.'. The cmd() and SPL() libraries are linked together, so you can use all the functions from both cmd() and SPL().'''
         self.__author__ = 'Mysterious Ranger'
-        self.__version__ = '1.3.8'
+        self.__version__ = '1.4.0'
         self.SplError = SplError
         self.err_file_path = 'File path not found.'
         self.err_app_path = 'App path not found.'
@@ -32,6 +32,8 @@ class cmd:
         if not self.checkpath(file):
             raise self.SplError(self.err_file_path)
         self.cmd('./{0}'.format(file))
+    def _pwm(self):
+	return os.getcwd()
     def checkpath(self, path):
         if os.path.exists(path):
             return True
