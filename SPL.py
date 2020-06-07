@@ -32,7 +32,7 @@ class cmd:
         self._cd(path)
         if not self.checkpath(file):
             raise self.SplError(self.err_file_path)
-        self.cmd('/{0}'.format(file)) # put a '.' before the '/' because sometimes it works and sometimes it doesn't
+        self.cmd('start {0}'.format(file))
     def _pwm(self):
 	return os.getcwd()
     def checkpath(self, path):
