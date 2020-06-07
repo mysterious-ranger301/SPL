@@ -6,7 +6,7 @@ programs (I assume your version if Py3 and you have Windows, but I think it shou
 with Py2). What this module does, is it lets your program open
 files with their appropriate apps. For example, you say spl.Open('Test.txt'),
 Python will open that file in, say, notepad. For macOSX users, I have a version for macOS, but
-most of the features rely on command line, so you'll have to download and edit for youself.
+most of the features rely on Windows, and only Windows, so you'll have to download and edit for youself.
 And as for Linux, sadly I couldn't get the linux version working, so you'll have to replicate it yourself :(
 Another feature is you can use the command line with this module.
 Say you type:
