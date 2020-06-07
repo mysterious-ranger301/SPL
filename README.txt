@@ -4,7 +4,7 @@ So first of all, unpack the .zip file and you'll see the .py file and
 this README.txt file. You can use this module in any of your Python
 programs (I assume your version if Py3 and you have Windows, but I think it should work
 with Py2). What this module does, is it lets your program open
-files with their appropriate apps. For example, you say spl.Open('Test.txt'),
+files with their appropriate apps. For example, you say spl.cmdUseStart('Test.txt'),
 Python will open that file in, say, notepad. For macOSX users, I have a version for macOS, 
 (github.com/mysterious-ranger301/SPL_for_mac) but
 most of the features rely on Windows, and only Windows, so the command line features will be disabled. Replace
@@ -24,7 +24,9 @@ mySplObj._cls() # clears screen (you might want this if your output is too messy
 ._cd(folder) # changes Python working directory to "folder" (also enter mySplObj._cd(folder),
 I'm just not putting the mySplObj there)
 .cmd(command) # lets you use the command line! (again, enter commands appropriate for your system)
-._cmdOpenFile(file) # more reliable than .Open(file), uses command line to do it.
+._cmdUseStart(file, path='.')  # uses keyword 'start' in command line. Sometimes it works and sometimes it doesn't
+._cmdUseSlash(file, extra='.', path='.') # uses key symbol '/'. Again, try either UseStart or UseSlash. Also
+try changing the "extra" parameter to ''
 .checkpath(path) # same as os.path.exists(path), needed for other functions
 .openWithApp(file_path, path_of_app) # lets you open a file with app (you have to enter
 the path of the app to do it)
