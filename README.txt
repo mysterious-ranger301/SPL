@@ -28,8 +28,7 @@ I'm just not putting the mySplObj there)
 .checkpath(path) # same as os.path.exists(path), needed for other functions
 .openWithApp(file_path, path_of_app) # lets you open a file with app (you have to enter
 the path of the app to do it)
-.Open(file, app='start') # opens file with default app (but you can change it by
-saying .Open('Test.txt', 'C:\\Windows\\System32\\notepad.exe'))
+.Open(file, app='start') # doesn't exist anymore; not reliable
 .openApp(app_path) # opens app (enter app path to do it)
 And that's all! There's even an error class - SplError! You can raise it if you want:
 raise SPL.SplError('An exception Occured')
